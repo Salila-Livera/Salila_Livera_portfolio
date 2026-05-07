@@ -68,4 +68,4 @@ To make the contact form functional:
 - **Images**: Replace images in the `public/` directory or update URLs in the components.
 
 ---
-Built with ❤️ by Antigravity
+Built with by PshycoLab 
