@@ -9,8 +9,8 @@ const ParticleBackground = () => {
     let animationFrameId;
 
     let particles = [];
-    const particleCount = 100;
-    const connectionDistance = 150;
+    const particleCount = 150;
+    const connectionDistance = 200;
     const mouseRadius = 150;
 
     let mouse = { x: null, y: null };
@@ -26,7 +26,7 @@ const ParticleBackground = () => {
         this.y = Math.random() * canvas.height;
         this.vx = (Math.random() - 0.5) * 0.5;
         this.vy = (Math.random() - 0.5) * 0.5;
-        this.size = Math.random() * 2 + 1;
+        this.size = Math.random() * 2.5 + 1.5;
       }
 
       update() {
@@ -53,7 +53,7 @@ const ParticleBackground = () => {
       draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(16, 185, 129, 0.3)';
+        ctx.fillStyle = 'rgba(16, 185, 129, 0.6)';
         ctx.fill();
       }
     }
@@ -69,7 +69,7 @@ const ParticleBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Draw connections
-      ctx.lineWidth = 0.5;
+      ctx.lineWidth = 0.8;
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const dx = particles[i].x - particles[j].x;
@@ -78,7 +78,7 @@ const ParticleBackground = () => {
 
           if (distance < connectionDistance) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(16, 185, 129, ${0.3 - distance / connectionDistance})`;
+            ctx.strokeStyle = `rgba(16, 185, 129, ${0.5 - distance / connectionDistance})`;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
             ctx.stroke();
