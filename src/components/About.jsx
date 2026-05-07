@@ -30,7 +30,7 @@ const About = () => {
           >
             <div className="relative z-10 rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl group">
               <img 
-                src="/avatar.png" 
+                src="avatar.png" 
                 alt="Profile" 
                 className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
               />

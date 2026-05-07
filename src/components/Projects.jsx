@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Futuristic Social App',
     category: 'Mobile',
-    image: '/project2.png',
+    image: 'project2.png',
     tech: ['React Native', 'Firebase', 'Redux', 'Framer'],
     description: 'A next-gen social platform focused on privacy and immersive user interactions with custom animations.',
     live: '#',

@@ -157,7 +157,7 @@ const Hero = () => {
               {/* Profile Image Container */}
               <div className="absolute inset-4 rounded-full overflow-hidden border-2 border-white/5 bg-dark-lighter">
                 <img 
-                  src="/avatar.png" 
+                  src="avatar.png" 
                   alt="Salila Livera" 
                   className="w-full h-full object-cover grayscale brightness-110 hover:grayscale-0 transition-all duration-700"
                 />
