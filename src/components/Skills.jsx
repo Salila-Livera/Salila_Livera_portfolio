@@ -229,21 +229,7 @@ const Skills = () => {
         </div>
       </div>
 
-      {[...Array(5)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute bg-white rounded-full pointer-events-none"
-          style={{
-            width: Math.random() * 4 + 1,
-            height: Math.random() * 4 + 1,
-            top: `${Math.random() * 100}%`,
-            left: `${Math.random() * 100}%`,
-            opacity: Math.random() * 0.2 + 0.1,
-            x: useTransform(smoothX, (v) => v * (i + 1) * -0.5),
-            y: useTransform(smoothY, (v) => v * (i + 1) * -0.5),
-          }}
-        />
-      ))}
+
     </section>
   );
 };
