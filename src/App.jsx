@@ -11,7 +11,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
-
+import ParticleBackground from './components/ParticleBackground';
 import PageTransition from './components/PageTransition';
 import Journal from './components/Journal';
 import CareerPlan from './components/CareerPlan';
@@ -88,7 +88,7 @@ function App() {
     <div className="min-h-screen selection:bg-primary selection:text-white cursor-none relative">
       <PageTransition />
       <CustomCursor />
-
+      <ParticleBackground />
       
       {/* Scroll Progress Bar */}
       <motion.div
