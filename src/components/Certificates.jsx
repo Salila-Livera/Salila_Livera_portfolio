@@ -12,10 +12,10 @@ const Certificates = () => {
       link: 'https://learn.microsoft.com/api/achievements/share/en-us/SalilaLiveraIT22638168-9187/FQHCDGCX?sharingId=108FCDA9B66677CB'
     },
     {
-      title: 'UI/UX Design Specialization',
-      issuer: 'California Institute of the Arts',
-      date: 'January 2026',
-      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1000&auto=format&fit=crop',
+      title: 'Diploma in English',
+      issuer: 'Esoft Metro Campus',
+      date: 'July 2019',
+      image: 'https://www.image2url.com/r2/default/images/1778176674889-2c9e7730-118b-4b81-abc7-1294697221b9.jpeg',
       link: '#'
     }
   ];
