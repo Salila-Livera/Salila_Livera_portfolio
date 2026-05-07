@@ -9,7 +9,7 @@ const ParticleBackground = () => {
     let animationFrameId;
 
     let particles = [];
-    let particleCount = window.innerWidth < 768 ? 40 : 150;
+    let particleCount = window.innerWidth < 768 ? 50 : 150;
     let connectionDistance = window.innerWidth < 768 ? 100 : 200;
     const mouseRadius = 150;
 
@@ -19,14 +19,10 @@ const ParticleBackground = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       
-      // Update counts for mobile responsiveness
-      const isMobile = window.innerWidth < 768;
-      const newCount = isMobile ? 40 : 150;
-      if (newCount !== particleCount) {
-        particleCount = newCount;
-        connectionDistance = isMobile ? 100 : 200;
-        init();
-      }
+      // Re-calculate settings on resize
+      particleCount = window.innerWidth < 768 ? 50 : 150;
+      connectionDistance = window.innerWidth < 768 ? 100 : 200;
+      init(); // Re-initialize particles to match new count
     };
 
     class Particle {
