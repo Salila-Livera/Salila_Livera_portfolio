@@ -10,7 +10,7 @@ const ParticleBackground = () => {
 
     let particles = [];
     let particleCount = window.innerWidth < 768 ? 40 : 150;
-    let connectionDistance = window.innerWidth < 768 ? 100 : 250;
+    let connectionDistance = window.innerWidth < 768 ? 100 : 200;
     const mouseRadius = 150;
 
     let mouse = { x: null, y: null };
@@ -24,7 +24,7 @@ const ParticleBackground = () => {
       const newCount = isMobile ? 40 : 150;
       if (newCount !== particleCount) {
         particleCount = newCount;
-        connectionDistance = isMobile ? 100 : 250;
+        connectionDistance = isMobile ? 100 : 200;
         init();
       }
     };
@@ -35,7 +35,7 @@ const ParticleBackground = () => {
         this.y = Math.random() * canvas.height;
         this.vx = (Math.random() - 0.5) * 0.5;
         this.vy = (Math.random() - 0.5) * 0.5;
-        this.size = Math.random() * 3 + 2;
+        this.size = Math.random() * 2.5 + 1.5;
       }
 
       update() {
@@ -78,7 +78,7 @@ const ParticleBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Draw connections
-      ctx.lineWidth = 1.2;
+      ctx.lineWidth = 0.8;
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const dx = particles[i].x - particles[j].x;
