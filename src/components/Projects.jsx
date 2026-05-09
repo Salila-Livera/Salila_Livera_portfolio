@@ -19,7 +19,7 @@ const projects = [
     description: 'A centralized platform for pet owners to manage veterinary services, browse products, and access community care resources.',
     live: '#',
     github: '#'
-  }
+  },
 ];
 
 const categories = ['All', 'Full Stack', 'Web App'];
