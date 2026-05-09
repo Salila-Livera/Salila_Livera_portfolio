@@ -61,6 +61,7 @@ To make the contact form functional:
 - **Smooth Scroll**: React Scroll
 - **Email Service**: @emailjs/browser
 
+
 ## 🎨 Customization
 
 - **Colors**: Update the `@theme` variables in `src/index.css`.
