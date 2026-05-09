@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Livera_Portfolio/',
+  base: '/Salila_Livera_portfolio/',
   plugins: [
     react(),
     tailwindcss(),
