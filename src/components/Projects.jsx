@@ -12,11 +12,11 @@ const projects = [
     github: 'https://github.com/Salila-Livera/Hospital_Management'
   },
   {
-    title: 'Futuristic Social App',
-    category: 'Mobile',
+    title: 'Pet care Management System(Vetcare)',
+    category: 'Web App',
     image: 'project2.png',
-    tech: ['React Native', 'Firebase', 'Redux', 'Framer'],
-    description: 'A next-gen social platform focused on privacy and immersive user interactions with custom animations.',
+    tech: ['React JS', 'JavaScript', 'HTML', 'CSS', 'Node js', 'Express', 'MongoDB'],
+    description: 'A centralized platform for pet owners to manage veterinary services, browse products, and access community care resources.',
     live: '#',
     github: '#'
   },
