@@ -19,28 +19,10 @@ const projects = [
     description: 'A centralized platform for pet owners to manage veterinary services, browse products, and access community care resources.',
     live: '#',
     github: '#'
-  },
-  {
-    title: 'AI Image Generator',
-    category: 'AI / ML',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop',
-    tech: ['React', 'Python', 'OpenAI', 'AWS'],
-    description: 'Leveraging stable diffusion to generate high-quality images from text prompts with a sleek interface.',
-    live: '#',
-    github: '#'
-  },
-  {
-    title: 'Crypto Portfolio Tracker',
-    category: 'Web App',
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1000&auto=format&fit=crop',
-    tech: ['React', 'D3.js', 'Web3.js', 'Solidity'],
-    description: 'Real-time cryptocurrency tracking platform with advanced charting and wallet integration.',
-    live: '#',
-    github: '#'
   }
 ];
 
-const categories = ['All', 'Full Stack', 'Web App', 'Mobile', 'AI / ML'];
+const categories = ['All', 'Full Stack', 'Web App'];
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('All');
